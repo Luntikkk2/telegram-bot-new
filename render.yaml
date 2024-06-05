@@ -1,0 +1,14 @@
+
+services:
+- type: web
+  name: telegram-bot
+  env: python
+  plan: free
+  repo: https://github.com/Luntikkk2/telegram-bot-new
+  buildCommand: pip install -r requirements.txt
+  startCommand: python bot.py
+  envVars:
+  - key: OPENAI_API_KEY
+    value: sk-proj-RB8AU0adiI4SNkUoFtiST3BlbkFJmWeDM6T4Nm9fLnYabzZf
+  - key: TELEGRAM_BOT_TOKEN
+    value: 7231687026:AAGjcMaY-tjF-JiP8WLiL9mpzKuuTN_hd7g
